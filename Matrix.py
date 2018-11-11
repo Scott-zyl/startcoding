@@ -27,7 +27,7 @@ class Solution():
                 if not (0 <= i < len(matrix)) or not (0 <= j < len(matrix[0])) \
                         or matrix[i][j] <= matrix[cell[0]][cell[1]] + 1:
                     continue
-                queue.append(i, j)  # second deal
+                queue.append((i, j))  # second deal
                 matrix[i][j] = matrix[cell[0]][cell[1]] + 1
         return matrix
 
